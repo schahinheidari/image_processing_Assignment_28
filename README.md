@@ -47,6 +47,14 @@ Here we are using Gaussian Blur to remove the Gaussian Noise from the image.
 #### Output:
 <img src="output/imgBlur.jpg" alt="Gaussian Blur mask" style="max-width: 500px;">
 
+Here we are threshold to applying different thresholding techniques on the input image.
+#### Output:
+<img src="output/thresh.jpg" alt="Gaussian Blur mask" style="max-width: 500px;">
+
+Here, since our background image is white, we need the background of our photo to be black for better image processing, 
+that's why we use cv2.bitwise_not.
+#### Output:
+<img src="output/threshBitwiseNot.jpg" alt="Gaussian Blur mask" style="max-width: 500px;">
 
 Finding all the contours in the image
 Sorting the contours in descending order based on their contour area.
@@ -60,8 +68,6 @@ We are applying the `four-point-transformation` to the image. It means that we w
 
 ## Resizing
 Resizing an image in OpenCV is accomplished by calling the `cv2.resize` function. However, special care needs to be taken to ensure that the aspect ratio is maintained.  This `resize` function of `imutils` maintains the aspect ratio and provides the keyword arguments `width` and `height` so the image can be resized to the intended width/height while (1) maintaining aspect ratio and (2) ensuring the dimensions of the image do not have to be explicitly computed by the developer.
-
-Another optional keyword argument, `inter`, can be used to specify interpolation method as well.
 
 #### Example:
 <pre># resize the image to
