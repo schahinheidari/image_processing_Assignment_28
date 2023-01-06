@@ -11,6 +11,20 @@ Provided you already have NumPy, Matplotlib, and OpenCV already installed, the `
 
 <pre>$ pip install imutils</pre>
 
+
+## Executing
+### Run
+
+```shell
+cd <Sudoku_HOME>
+python3 image_processing_Assignment_28/sudoku.py --input sudoku.jpg --output result.jpg
+```
+### Help
+```shell
+cd <Sudoku_HOME>
+python3 image_processing_Assignment_28/sudoku.py --help
+```
+
 ## Finding function OpenCV functions by name
 OpenCV can be a big, hard to navigate library, especially if you are just getting started learning computer vision and image processing. The `find_function` method allows you to quickly search function names across modules (and optionally sub-modules) to find the function you are looking for.
 
