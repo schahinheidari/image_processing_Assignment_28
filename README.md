@@ -65,10 +65,10 @@ Another optional keyword argument, `inter`, can be used to specify interpolation
 
 #### Example:
 <pre># resize the image to
-for width in (400, 400):
+for width in (500, 500):
 	# resize the image and display it
-  plate = cv.resize(cropSudoku, (width, width))
-	cv2.imshow("Width=%dpx" % (width), plate)</pre>
+plate = imutils.resize(cropSudoku, height = 500)
+cv2.imshow("Width=%dpx" % (width), plate)</pre>
 
 #### Output:
 
