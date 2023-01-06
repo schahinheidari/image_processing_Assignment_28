@@ -41,11 +41,11 @@ imutils.find_function("contour")</pre>
 
 Here we are converting our BGR image to a grayscale image.
 #### Output:
-<img src="....." alt="grayscale image" style="max-width: 500px;">
+<img src="output/imgGray.jpg" alt="grayscale image" style="max-width: 500px;">
 
 Here we are using Gaussian Blur to remove the Gaussian Noise from the image.
 #### Output:
-<img src="....." alt="Gaussian Blur mask" style="max-width: 500px;">
+<img src="output/imgBlur.jpg" alt="Gaussian Blur mask" style="max-width: 500px;">
 
 
 Finding all the contours in the image
@@ -53,7 +53,7 @@ Sorting the contours in descending order based on their contour area.
 Traversing in contours and finding the contour with 4 sides using cv2.approxPolyDP().
 We are simply drawing line around of the rectangle. These are the points that we got above in the contour detection step using the CHAIN_APPROX_SIMPLE method.
 #### Output:
-<img src="....." alt="drawing line around of the rectangle" style="max-width: 500px;">
+<img src="output/result.jpg" alt="drawing line around of the rectangle" style="max-width: 500px;">
 
 ## Cropping
 We are applying the `four-point-transformation` to the image. It means that we will only extract the document from the image. Or we can also say that we just want to extract the rectangle formed by the four points.
@@ -72,4 +72,4 @@ for width in (400, 400):
 
 #### Output:
 
-<img src="....." alt="Resizing example" style="max-width: 500px;">
+<img src="output/crop.jpg" alt="Resizing example" style="max-width: 500px;">
